@@ -11,7 +11,7 @@ body {
     display: flex;
     flex-direction: column;
     margin: 30px auto;
-    /* width: 750px; */
+    max-width: 750px;
     width: 80%;
     background: rgba(255, 255, 255, 0.601);
     border-radius: 10px;
@@ -22,6 +22,10 @@ header {
     color: whitesmoke;
     font-size: 30px;
     text-shadow: 3px 3px 0px black;
+}
+
+.food-item-description{
+    width: 70%;
 }
 
 .food-item-container{
@@ -73,6 +77,13 @@ header {
     display: none;
 }
 
+.card-item-price, .total-price{
+    box-shadow: 1px 1px 0px black;
+    display: inline-block;
+    width: 100%;
+    text-align: right;
+}
+
 .remove{
     cursor: pointer;
     margin: auto 5px;
@@ -101,6 +112,7 @@ header {
 
 .modal{
     width: 50%;
+    max-width: 750px;
     border: 1px solid black;
     position: fixed;
     top:10%;
