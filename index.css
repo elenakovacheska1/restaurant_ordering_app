@@ -1,7 +1,7 @@
 body {
     margin: 0;
     font-family: 'Smythe', cursive;
-    font-size: 20px;
+    font-size: 1.25rem;
     background: url('./images/background.jpg');
     background-size: cover;
     letter-spacing: 2px;
@@ -10,7 +10,7 @@ body {
 .container{
     display: flex;
     flex-direction: column;
-    margin: 30px auto;
+    margin: 1.875em auto;
     max-width: 750px;
     width: 80%;
     background: rgba(255, 255, 255, 0.601);
@@ -20,7 +20,7 @@ body {
 header {
     text-align: center;
     color: whitesmoke;
-    font-size: 30px;
+    font-size: 1.875rem;
     text-shadow: 3px 3px 0px black;
 }
 
@@ -30,17 +30,17 @@ header {
 
 .food-item-container{
     display: flex;
-    margin: 10px auto;
+    margin: 0.625em auto;
     border-bottom: 1px solid #F5F5F5;
 }
 
 .order-container{
-    padding: 50px;
+    padding: 3.125em;
 }
 
 .order-container .title{
     text-align: center;
-    padding: 30px;
+    padding: 1.875em;
 }
 
 .food-item-emoji{
@@ -50,21 +50,21 @@ header {
 
 .food-ing{
     color: #3d3d3d;
-    font-size: 20px;
+    font-size: 1.25rem;
     flex-wrap: wrap;
     word-break: break-all;
 }
 
 .add-to-card-btn{
     border-radius: 50%;
-    height: 3rem;
-    width: 3rem;
+    width: 2em;
+    object-fit: cover;
     align-self: center;
-    margin: 10px 20px;
+    margin: 0.625em 1.25em;
     border: 2px solid #786f6f;
     background: none;
     color: #3C3C3C;
-    font-size: 35px;
+    font-size: 2.1875rem;
     box-shadow: 3px 3px 0px black;
 }
 
@@ -86,9 +86,9 @@ header {
 
 .remove{
     cursor: pointer;
-    margin: auto 5px;
+    margin: auto 0.3125em;
     color: #4a4a4a;
-    font-size: 16px;
+    font-size: 1rem;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
@@ -98,8 +98,8 @@ header {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     width: 100%;
     border: none;
-    padding: 20px;
-    margin: 50px auto;
+    padding: 1.25em;
+    margin: 3.125em auto;
     cursor: pointer;
     border-radius: 5px;
     font-weight: bold;
@@ -113,12 +113,14 @@ header {
 .modal{
     width: 50%;
     max-width: 750px;
+    height: 70%;
     border: 1px solid black;
     position: fixed;
-    top:10%;
-    left: 20%;
+    top: 8%;
+    left: auto;
+    margin: 1em auto;
     background-color: white;
-    padding: 50px;
+    padding: 3.125em;
     display: flex;
     flex-direction: column;
     box-shadow: 0px 0px 10px black;
@@ -127,8 +129,8 @@ header {
 }
 
 .modal input{
-    padding: 30px;
-    margin: 10px;
+    padding: 1.875em;
+    margin: 0.625em;
     border-radius: 5px;
     width: 100%;
     word-break: break-all;
@@ -143,8 +145,8 @@ header {
     background: #16DB99;
     border: none;
     width: 100%;
-    padding: 20px;
-    margin: 30px auto;
+    padding: 1.25em;
+    margin: 1.875em auto;
     border-radius: 5px;
 }
 
@@ -156,6 +158,6 @@ header {
 .delivery-message{
     color: #065F46;
     background-color: #c6efe2;
-    padding: 30px;
-    margin: 50px 0px;
+    padding: 1.875em;
+    margin: 3em 0px;
 }
