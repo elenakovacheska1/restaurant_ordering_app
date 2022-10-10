@@ -113,11 +113,9 @@ header {
 .modal{
     width: 50%;
     max-width: 750px;
-    height: 70%;
     border: 1px solid black;
     position: fixed;
-    top: 8%;
-    left: auto;
+    top: 0%;
     margin: 1em auto;
     background-color: white;
     padding: 3.125em;
@@ -129,10 +127,9 @@ header {
 }
 
 .modal input{
-    padding: 1.875em;
+    padding: 1.5em;
     margin: 0.625em;
     border-radius: 5px;
-    width: 100%;
     word-break: break-all;
 }
 
