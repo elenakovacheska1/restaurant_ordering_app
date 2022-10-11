@@ -68,7 +68,9 @@ function render() {
             <p class="food-ing">${item.ingredients}</p>
             <h2>$${item.price}</h2>
           </div>
+          <a class="add-to-card-link" href="#complete-order-btn">
           <button class="add-to-card-btn" data-addtocard="${item.id}">+</button>
+          </a>
         </section>
         `;
   });

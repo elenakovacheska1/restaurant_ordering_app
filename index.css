@@ -59,7 +59,8 @@ header {
 
 .add-to-card-btn{
     border-radius: 50%;
-    width: 2em;
+    width: 1.5em;
+    height: 1.5em;
     object-fit: cover;
     align-self: center;
     margin: 0.625em 1.25em;
