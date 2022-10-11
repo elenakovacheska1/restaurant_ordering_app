@@ -118,7 +118,7 @@ header {
     border: 1px solid black;
     position: fixed;
     top: 0%;
-    margin: 1em auto;
+    margin: 12vh 25vw;
     background-color: white;
     padding: 3.125em;
     display: flex;
@@ -126,6 +126,12 @@ header {
     box-shadow: 0px 0px 10px black;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     border-radius: 5px;  
+}
+
+@media (max-width: 1100px) {
+    .modal {
+        margin: 10vh 10vw;
+    }
 }
 
 .modal input{

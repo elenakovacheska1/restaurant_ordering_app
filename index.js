@@ -13,11 +13,15 @@ document.addEventListener("click", function (event) {
     handleAddToCardClick(event.target.dataset.addtocard);
   } else if (event.target.id === "complete-order-btn") {
     handleCompleteOrderClick();
-  } else if (event.target.id === "pay") {
-    handlePayClick();
   } else if (event.target.dataset.remove) {
     handleRemoveClick(event.target.dataset.remove);
   }
+});
+
+document.addEventListener("submit", function (event) {
+  handlePayClick();
+  event.preventDefault();
+  document.getElementById("modal").style.display = "none";
 });
 
 function handleAddToCardClick(itemId) {
@@ -27,6 +31,8 @@ function handleAddToCardClick(itemId) {
 
 function handleCompleteOrderClick() {
   renderModal();
+  const modalEl = document.getElementById("modal");
+  document.body.appendChild(modalEl);
 }
 
 function handlePayClick() {
@@ -99,7 +105,7 @@ function renderModal() {
 
   let modalHtml = `<div id="modal" class="${modalClass} modal">
           <h3>Enter card details</h3> 
-          <form action="#">  
+          <form>  
             <input type="text" placeholder="Enter your name" id="name" required />
             <input
               type="text"
