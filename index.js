@@ -98,7 +98,8 @@ function renderModal() {
   }
 
   let modalHtml = `<div id="modal" class="${modalClass} modal">
-          <h3>Enter card details</h3>   
+          <h3>Enter card details</h3> 
+          <form action="#">  
             <input type="text" placeholder="Enter your name" id="name" required />
             <input
               type="text"
@@ -108,6 +109,7 @@ function renderModal() {
             />
             <input type="text" placeholder="Enter CVV" id="cvv" required />
             <button type="submit" id="pay">Pay</button>
+          </form>
         </div>`;
   mainEl.innerHTML += modalHtml;
 }

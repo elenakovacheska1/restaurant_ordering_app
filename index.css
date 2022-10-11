@@ -3,7 +3,9 @@ body {
     font-family: 'Smythe', cursive;
     font-size: 1.25rem;
     background: url('./images/background.jpg');
+    background-position: center;
     background-size: cover;
+    background-attachment: fixed;
     letter-spacing: 2px;
 } 
 
