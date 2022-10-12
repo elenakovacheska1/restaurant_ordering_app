@@ -54,7 +54,6 @@ header {
     color: #3d3d3d;
     font-size: 1.25rem;
     flex-wrap: wrap;
-    word-break: break-all;
 }
 
 .add-to-card-btn{

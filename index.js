@@ -65,7 +65,7 @@ function render() {
           <div class="food-item-emoji">${item.emoji}</div>
           <div class="food-item-description">
             <h2>${item.name}</h2>
-            <p class="food-ing">${item.ingredients}</p>
+            <p class="food-ing">${item.ingredients.join(", ")}</p>
             <h2>$${item.price}</h2>
           </div>
           <a class="add-to-card-link" href="#complete-order-btn">
